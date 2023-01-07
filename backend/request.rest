@@ -18,3 +18,19 @@ GET http://localhost:3000/api/services
 ###
 
 GET http://localhost:3000/api/services/63b97e7dd78f281694eafe43
+
+###
+
+DELETE http://localhost:3000/api/services/63b97e7dd78f281694eafe42
+
+###
+
+PUT http://localhost:3000/api/services/63b980cf53c0e16bdb9cb949
+Content-Type: application/json
+
+{
+    "name": "Algum serviço Atualizado",
+    "description": "Alguma descrição",
+    "price": 2600,
+    "image": "https://th.bing.com/th/id/OIP.yFdOJWcYXCnpYHKz3cWSQAHaFj?w=216&h=180&c=7&r=0&o=5&pid=1.7"
+}
