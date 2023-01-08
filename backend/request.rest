@@ -34,3 +34,66 @@ Content-Type: application/json
     "price": 2600,
     "image": "https://th.bing.com/th/id/OIP.yFdOJWcYXCnpYHKz3cWSQAHaFj?w=216&h=180&c=7&r=0&o=5&pid=1.7"
 }
+
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 03",
+    "author": "Matheus",
+    "description": "Uma festa de teste",
+    "budget": 8000,
+    "image": "https://th.bing.com/th/id/OIP.8Xkze8zakJqW7VNPT3yxFgHaEs?pid=ImgDet&rs=1",
+    "services": [
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://th.bing.com/th/id/OIP.yFdOJWcYXCnpYHKz3cWSQAHaFj?w=216&h=180&c=7&r=0&o=5&pid=1.7"
+        },
+        {
+            "name": "Algum serviço 3",
+            "description": "Alguma descrição",
+            "price": 2600,
+            "image": "https://th.bing.com/th/id/OIP.yFdOJWcYXCnpYHKz3cWSQAHaFj?w=216&h=180&c=7&r=0&o=5&pid=1.7"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/63ba81d1636d947856c16be1
+
+###
+DELETE http://localhost:3000/api/parties/63ba81d1636d947856c16be1
+
+###
+PUT http://localhost:3000/api/parties/63ba81e4636d947856c16be3
+Content-Type: application/json
+
+{
+    "title": "Meu evento 04",
+    "author": "Matheus",
+    "description": "Uma festa de teste",
+    "budget": 8000,
+    "image": "https://th.bing.com/th/id/OIP.8Xkze8zakJqW7VNPT3yxFgHaEs?pid=ImgDet&rs=1",
+    "services": [
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://th.bing.com/th/id/OIP.yFdOJWcYXCnpYHKz3cWSQAHaFj?w=216&h=180&c=7&r=0&o=5&pid=1.7"
+        },
+        {
+            "name": "Algum serviço 3",
+            "description": "Alguma descrição",
+            "price": 2600,
+            "image": "https://th.bing.com/th/id/OIP.yFdOJWcYXCnpYHKz3cWSQAHaFj?w=216&h=180&c=7&r=0&o=5&pid=1.7"
+        }
+    ]
+}
