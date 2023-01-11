@@ -6,8 +6,9 @@ import Navegacao from "./components/navegacao";
 
 const Nav = styled.div`
   width: 100%;
-  height: 60px;
+  height: 90px;
   background-color: #cd8c52;
+  padding: 5px 0;
 
 `;
 
